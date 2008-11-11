@@ -43,16 +43,28 @@ This list tries to give an overview of features supported by cjklib.
   * Korean
     * Hangul
 
-== Character _reading_ mapping ==
+== Character to reading mapping ==
+  * Character to reading and reading to character mappings as supported by the Unihan database for Mandarin Chinese, Yue (Cantonese) and Korean
+  * Support of non-standard realisations of input reading (_reading dialect_)
+
+== Radicals ==
   * ...
 
-== Radicals_ ==
+== Variants ==
+  * Variant information as given by the Unihan database:
+    * Compatible character forms
+    * Semantic variant forms, often used interchangeably
+    * Specialised semantic variant forms, often used interchangeably but limited to certain contexts
+    * Z-variant forms, which only differ in typeface 
+    * Simplified Chinese character forms, originating from the character simplification process of the PR China
+    * Traditional character forms for a simplified Chinese character
+  * Database of character variants for components and stroke decomposition on a glyph basis (see below)
+  * Default mapping of glyph form for locale
+
+== Character components ==
   * ...
 
-== Character components_ ==
-  * ...
-
-== _Strokes_ ==
+== Strokes ==
   * Glyph dependant stroke count
   * ...
 
