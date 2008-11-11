@@ -1,0 +1,57 @@
+#summary Feature list
+#labels Featured,Phase-Design
+
+= Introduction =
+
+This list tries to give an overview of features supported by cjklib.
+
+
+= Details =
+
+== _Romanisations_/_readings_ ==
+  * Break down (_decompose_) strings into single reading entities
+  * Join (_compose_) single entities together, apply formatting where needed
+  * Handle various decompositions for ambiguous input
+  * List of supported reading entities
+  * Tonal languages:
+    * Combine base syllable with tone and get tone from syllable for tonal languages
+    * Choice of diacritics and tone marks, set according to placement rules
+  * Reading dialects:
+    * Support of various (e.g. non-standard) realisations of a reading (_reading dialect_), e.g. type face variations
+    * Guessing of given reading realisation to pinpoint _reading dialect_
+    * Conversion of variation to standard form
+  * Analysis of syllable forms, e.g breaking into onset and rhyme
+
+  * Conversion between readings:
+    * Conversion of strings including non-reading entities
+    * Preservation of upper and lower case
+    * Support of user-adapted conversion for ambiguous cases
+    * Error handling for ambiguous cases/conversion errors
+    * Support of non-standard realisations of input reading (_reading dialect_)
+
+=== Currently supported readings ===
+  * Mandarin Chinese:
+    * Pinyin
+    * Gwoyeu Romatzyh
+    * Wade-Giles (work in progress)
+    * IPA
+    * Braille
+  * Yue (Cantonese):
+    * Cantonese Yale
+    * Jyutping
+    * IPA (work in progress)
+  * Korean
+    * Hangul
+
+== Character _reading_ mapping ==
+  * ...
+
+== Radicals_ ==
+  * ...
+
+== Character components_ ==
+  * ...
+
+== _Strokes_ ==
+  * Glyph dpendant stroke count
+  * ...
