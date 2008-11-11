@@ -53,5 +53,11 @@ This list tries to give an overview of features supported by cjklib.
   * ...
 
 == _Strokes_ ==
-  * Glyph dpendant stroke count
+  * Glyph dependant stroke count
   * ...
+
+== Build system ==
+A dependancy based, modular build system is supplied for creating the library's database from packaged data files and from [http://unicode.org/charts/unihan.html Unicode's Unihan] database. Additionally Unihan's data can be overloaded by more precise data if available.
+
+== Dictionaries ==
+Support for [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT], [http://www.mdbg.net/chindict/chindict.php?page=cedict CEDICT], [http://www.chinaboard.de/chinesisch_deutsch.php HanDeDict] with full-text search included for command-line tool _cjknife_.
