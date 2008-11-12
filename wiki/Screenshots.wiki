@@ -1,0 +1,137 @@
+#summary Examples showing the library's functionality.
+#labels Featured
+
+= Introduction =
+
+Most products come with a "screenshot" section, showing functionality or the look and feel  of the application. As cjklib is a library this pages should focus on the former one. The command-line script ''cjknife'' gives quick access to most of the functions, so it shall be used here.
+
+
+= Details =
+
+=== Supplying character-based information ===
+Get character information including:
+  * Kangxi radical information
+  * Stroke count
+  * Character reading
+  * Encoded character variants
+  * Glyphs overview
+  * Character decomposition
+
+{{{
+$ ./cjknife -i 醒
+Information for character 醒 (traditional locale)
+Unicode codepoint: 0x9192 (37266, character form)
+Radical index: 164, radical form: ⾣
+Stroke count: 16
+Phonetic data (CantoneseYale): séng, sīng, síng
+Phonetic data (GR): cherng, jing, shing, shiing
+Phonetic data (Hangul): 성
+Phonetic data (Jyutping): seng2, sing1, sing2
+Phonetic data (MandarinBraille): ⠟⠼⠂, ⠛⠡⠁, ⠓⠡⠁, ⠓⠡⠄
+Phonetic data (MandarinIPA): tʂ‘əŋ˧˥, tɕiŋ˥˥, ɕiŋ˥˥, ɕiŋ˨˩˦
+Phonetic data (Pinyin): chéng, jīng, xīng, xǐng
+Phonetic data (WadeGiles): ch‘eng2, ching1, hsing1, hsing3
+Specialised semantic variants: 惺
+Glyph 0(*), stroke count: 16
+⿰酉星　　
+　　⿱日生
+}}}
+
+
+=== Looking up characters by reading ===
+Get a list of homophon characters with the given reading:
+{{{
+$ ./cjknife -s Hangul -a 국
+匊國局掬菊跼鞠鞫麯麴
+}}}
+
+
+=== Get reading of characters ===
+{{{
+$ ./cjknife -t Hangul -r 漢字
+한 자
+}}}
+
+Get readings for characters with several pronunciations (多音字):
+{{{
+$ ./cjknife -t Pinyin -r 漢字
+[hàn tān] [zì zi]
+}}}
+
+
+=== Convert between traditional and simplified forms ===
+{{{
+$ ./cjknife -f 漢字
+Chinese simplified: 汉字
+Traditional: 漢字
+}}}
+
+
+=== Get characters by components ===
+Get a list of characters including all the given characters:
+{{{
+$ ./cjknife -p 口五
+圄龉䮏鋙焐唔㐚䦜悟語梧䢩娪鼯逜䎸吾鯃捂俉䓊啎敔珸衙郚寤晤痦语齬浯㹳㕶䏸铻峿牾
+}}}
+
+=== Convert readings ===
+Converting from tones given by numbers to standard form with diacritics:
+{{{
+$ ./cjknife -s CantoneseYale -t CantoneseYale -m gwong2dung1wa2
+gwóngdūngwá
+}}}
+
+Convert between romanisations:
+{{{
+$ ./cjknife -s Pinyin -t GR -m Guo2yu3
+Gwoyeu
+}}}
+
+Get pronunciation in IPA (considering basic tonal changes):
+{{{
+$ ./cjknife -s Pinyin -t MandarinIPA -m lao3shi1
+lau˨˩.ʂʅ˥˥
+}}}
+
+=== Dictionary lookup ===
+_The following extracts are taken from [http://www.mdbg.net/chindict/chindict.php?page=cedict CC-CEDICT] licensed under the Creative Commons Attribution-Share Alike 3.0 License._
+
+Looking for entries including a term in Chinese characters:
+{{{
+$ ./cjknife -c 漢字
+漢字, Hàn zì, /Chinese character, kanji/
+漢字查字法, Hàn zì chá zì fǎ, /look-up method for Chinese characters/
+漢字輸入, Hàn zì shū rù, /Chinese character input/method for typing Chinese/
+漢字輸入系統, Hàn zì shū rù xì tǒng, /Chinese character input system/
+漢字字體, Hàn zì zì tǐ, /calligraphic style of Chinese characters/typeface/font/
+統漢字, tǒng Hàn zì, /Unihan/CJK unified ideographs/
+}}}
+
+Looking for an exact English term:
+{{{
+$ ./cjknife -x "knowledge"
+見聞, jiàn wén, /what one sees and hears/knowledge/information/
+認識, rèn shi, /to know/to recognize/to be familiar with/acquainted with sth/kno
+wledge/understanding/awareness/cognition/
+識, shí, /to know/knowledge/Taiwan pr. shi4/
+諝, xǔ, /deceit/knowledge/
+學問, xué wèn, /learning/knowledge/
+知識, zhī shi, /intellectual/knowledge-related/knowledge/
+智, zhì, /wisdom/knowledge/
+智慧, zhì huì, /wisdom/knowledge/
+}}}
+
+Looking for exact matches to a given reading:
+{{{
+$ ./cjknife -x "zhishi"
+知識, zhī shi, /intellectual/knowledge-related/knowledge/
+執事, zhí shì, /deacon/
+只是, zhǐ shì, /merely/simply/only/but/
+指事, zhǐ shì, /ideogram (one of the Six Methods 六書|六书 of forming Chinese ch
+aracters)/Chinese character indicating an idea, such as up and down/also known a
+s self-explanatory character/
+指示, zhǐ shì, /to point out/to indicate/(give) directives or instructions/
+致使, zhì shǐ, /cause/result in/
+制式, zhì shì, /standard (format, e.g. PAL or SECAM for TV signal)/system/servic
+e pattern/type of service/
+}}}
