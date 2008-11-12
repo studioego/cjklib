@@ -1,9 +1,9 @@
-#summary Feature list
+#summary List of implemented features.
 #labels Featured,Phase-Design
 
 = Introduction =
 
-This list tries to give an overview of features supported by cjklib.
+This list tries to give an overview of features supported by cjklib. If you would like to see some examples try [Screenshots].
 
 
 = Details =
