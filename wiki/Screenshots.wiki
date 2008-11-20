@@ -67,12 +67,26 @@ Traditional: 漢字
 }}}
 
 
+=== Get characters by Kangxi radical ===
+{{{
+$ ./cjknife -k 7
++0: 二                                                                   
++1: 亐亍亏于                                                             
++2: 云亓互井五亖                                                         
++3: 亗                                                                   
++4: 亙亘                                                                 
++5: 亜                                                                   
++6: 些亝亟亞                                                             
+}}}
+
+
 === Get characters by components ===
 Get a list of characters including all the given characters:
 {{{
 $ ./cjknife -p 口五
 圄龉䮏鋙焐唔㐚䦜悟語梧䢩娪鼯逜䎸吾鯃捂俉䓊啎敔珸衙郚寤晤痦语齬浯㹳㕶䏸铻峿牾
 }}}
+
 
 === Convert readings ===
 Converting from tones given by numbers to standard form with diacritics:
@@ -92,6 +106,7 @@ Get pronunciation in IPA (considering basic tonal changes):
 $ ./cjknife -s Pinyin -t MandarinIPA -m lao3shi1
 lau˨˩.ʂʅ˥˥
 }}}
+
 
 === Dictionary lookup ===
 _The following extracts are taken from [http://www.mdbg.net/chindict/chindict.php?page=cedict CC-CEDICT] licensed under the Creative Commons Attribution-Share Alike 3.0 License._
