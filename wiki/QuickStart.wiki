@@ -1,0 +1,40 @@
+#summary Guide on how to quick start into using cjklib.
+#labels Featured
+
+= Introduction =
+
+Make sure you have Python, either SQLite or MySQL and the corresponding Python module installed. In the following steps Unix commands are shown as an example. Change to the appropriate commands under Windows when on this system.
+
+= Steps =
+
+  # Get the source code first
+  {{{
+  svn checkout http://cjklib.googlecode.com/svn/trunk/ cjklib-read-only
+  }}}
+  # Go to the new directory
+  {{{
+  cd cjklib-read-only
+  }}}
+  # Get Unihan.txt from [ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip]
+  {{{
+  wget ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip
+  }}}
+  # Build the database
+  {{{
+  ./buildcjkdb -b cjklibData
+  }}}
+
+Now you should be able to test most of the examples given under [Screenshots].
+
+Additionally you can add a dictionary:
+
+  # Download CEDICT from [http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz]
+  {{{
+  wget http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz
+  }}}
+  # Build the tables needed:
+  {{{
+  ./buildcjkdb -b fullCEDICT
+  }}}
+
+That's it.
