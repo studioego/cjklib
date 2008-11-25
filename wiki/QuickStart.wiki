@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Make sure you have Python, either SQLite or MySQL and the corresponding Python module installed. In the following steps Unix commands are shown as an example. Change to the appropriate commands under Windows when on this system.
+Make sure you have Python, SQLite and pysqlite2 installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example, change to the appropriate commands under Windows when on this system.
 
 = Steps =
 
@@ -26,13 +26,13 @@ Make sure you have Python, either SQLite or MySQL and the corresponding Python m
 
 Now you should be able to test most of the examples given under [Screenshots].
 
-Additionally you can add a dictionary:
+For the additionally offered dictionary functions you can:
 
   # Download CEDICT from [http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz]
   {{{
   wget http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz
   }}}
-  # Build the tables needed:
+  # Build the tables needed
   {{{
   ./buildcjkdb -b fullCEDICT
   }}}
