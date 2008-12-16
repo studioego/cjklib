@@ -155,6 +155,46 @@ This list serves as a (partial) reference to the database scheme listing tables 
   䭮|19|0
   揊|12|0
   }}}
+  * StrokeOrder
+  Stroke order of gylphs on a purely name basis.
+  {{{
+  CREATE TABLE StrokeOrder (
+    ChineseCharacter CHAR(1) NOT NULL,        -- Chinese character (includes
+                                              -- radical forms)
+    StrokeOrder VARCHAR(50) NOT NULL,         -- Stroke order, strokes abbreviated
+    ZVariant INTEGER NOT NULL DEFAULT 0,      -- Z-variant of character
+    Flags VARCHAR(5) DEFAULT '',              -- Flags, (O) checked, (S) variant
+                                              --  found only as sub part
+    PRIMARY KEY (ChineseCharacter, ZVariant)
+  );
+  }}}
+  Example:
+  {{{
+  select * from StrokeOrder limit 5;
+  ⻏|HP-WG-S|0|
+  ⻏|HPWG-S|1|
+  ⻝|SP-N-D-HZ-H-H-ST-P-D|1|
+  ⻝|SP-N-D-HZ-H-H-ST-P-N|0|
+  ⾷|SP-N-D-HZ-H-H-ST-P-D|1|
+  }}}
+  * Strokes
+  List of strokes as decoded in Unicode with name.
+  {{{
+  CREATE TABLE Strokes (
+    StrokeAbbrev VARCHAR(10) PRIMARY KEY, -- Abbreviated stroke name
+    Name VARCHAR(20) UNIQUE,              -- Chinese stroke name
+    Stroke VARCHAR(3) NOT NULL            -- Stroke char or placeholder
+  );
+  }}}
+  Example:
+  {{{
+  select * from Strokes limit 5;
+  T|提|㇀
+  WG|彎鉤|㇁
+  WSG|彎豎鉤|㇁
+  XG|斜鉤|㇂
+  NG|捺鉤|㇂
+  }}}
   * CharacterVariant
   Mapping to character variant forms, e.g. Chinese simplfied to traditional.
   {{{
