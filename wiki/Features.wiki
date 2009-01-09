@@ -72,4 +72,4 @@ This list tries to give an overview of features supported by cjklib. If you woul
 A dependancy based, modular build system is supplied for creating the library's database from packaged data files and from [http://unicode.org/charts/unihan.html Unicode's Unihan] database. Additionally Unihan's data can be overloaded by more precise data if available.
 
 == Dictionaries ==
-Support for [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT], [http://www.mdbg.net/chindict/chindict.php?page=cedict CEDICT], [http://www.chinaboard.de/chinesisch_deutsch.php HanDeDict] with full-text search included for command-line tool _cjknife_.
+Support for [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT], [http://www.mdbg.net/chindict/chindict.php?page=cedict CEDICT], the [http://home.iprimus.com.au/richwarm/gr/gr.htm#grdict Gwoyeu Romatzyh Version of CEDICT] (called CEDICTGR here) and [http://www.chinaboard.de/chinesisch_deutsch.php HanDeDict] with full-text search included for command-line tool _cjknife_.
