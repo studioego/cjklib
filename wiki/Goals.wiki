@@ -1,5 +1,5 @@
 #summary Goals of the cjklib library.
-#labels Phase-Design,Featured
+#labels Phase-Requirements,Featured
 
 = Introduction =
 
