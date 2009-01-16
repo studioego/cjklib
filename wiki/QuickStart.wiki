@@ -1,5 +1,5 @@
 #summary Guide on how to quick start into using cjklib.
-#labels Featured
+#labels Featured,Phase-Deploy
 
 = Introduction =
 
