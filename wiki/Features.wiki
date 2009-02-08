@@ -42,6 +42,8 @@ This list tries to give an overview of features supported by cjklib. If you woul
     * IPA (work in progress)
   * Korean
     * Hangul
+  * Japanese
+    * Kana (Hiragana & Katakana)
 
 == Character to reading mapping ==
   * Character to reading and reading to character mappings as supported by the Unihan database for Mandarin Chinese, Yue (Cantonese) and Korean
