@@ -109,11 +109,11 @@ lau˨˩.ʂʅ˥˥
 
 
 === Dictionary lookup ===
-_The following extracts are taken from [http://www.mdbg.net/chindict/chindict.php?page=cedict CC-CEDICT] licensed under the Creative Commons Attribution-Share Alike 3.0 License._
+_The following extracts are taken from [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT] and [http://www.mdbg.net/chindict/chindict.php?page=cedict CC-CEDICT] licensed under the Creative Commons Attribution-Share Alike 3.0 License._
 
 Looking for entries including a term in Chinese characters:
 {{{
-$ ./cjknife -c 漢字
+$ ./cjknife -w CEDICT -c 漢字
 漢字, Hàn zì, /Chinese character, kanji/
 漢字查字法, Hàn zì chá zì fǎ, /look-up method for Chinese characters/
 漢字輸入, Hàn zì shū rù, /Chinese character input/method for typing Chinese/
@@ -124,7 +124,7 @@ $ ./cjknife -c 漢字
 
 Looking for an exact English term:
 {{{
-$ ./cjknife -x "knowledge"
+$ ./cjknife -w CEDICT -x "knowledge"
 見聞, jiàn wén, /what one sees and hears/knowledge/information/
 認識, rèn shi, /to know/to recognize/to be familiar with/acquainted with sth/kno
 wledge/understanding/awareness/cognition/
@@ -138,7 +138,20 @@ wledge/understanding/awareness/cognition/
 
 Looking for exact matches to a given reading:
 {{{
-$ ./cjknife -x "zhishi"
+$ ./cjknife -w EDICT -x かんじ
+冠辞, かんじ, /(n) stereotyped epithet/
+官事, かんじ, /(n) government business/
+官寺, かんじ, /(n) state-sponsored temples, particularly those favored and prote
+cted by the shogunate during the Kamakura period/
+寛治, かんじ, /(n) Kanji era (1087.4.7-1094.12.15)/
+幹事, かんじ, /(n,vs) executive secretary/coordinator/arranging/(P)/
+感じ, かんじ, /(n) feeling/sense/impression/(P)/
+漢字, かんじ, /(n) Chinese characters/kanji/(P)/
+監事, かんじ, /(n) manager/supervisor/
+莞爾, かんじ, /(adv-to) smiling/
+}}}
+{{{
+$ ./cjknife -w CEDICT -x "zhishi"
 知識, zhī shi, /intellectual/knowledge-related/knowledge/
 執事, zhí shì, /deacon/
 只是, zhǐ shì, /merely/simply/only/but/
