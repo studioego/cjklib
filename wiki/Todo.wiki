@@ -3,18 +3,18 @@
 
 = Introduction =
 
-The [http://www.stud.uni-karlsruhe.de/~uyhc/api/index.html API] already includes a [http://www.stud.uni-karlsruhe.de/~uyhc/api/todo-index.html list of Todos] marked with the place where actions needs to be taken. This page in contrast is ment to give a broader overview on things that still need to be done.
+The [http://www.stud.uni-karlsruhe.de/~uyhc/api/index.html API] already includes a [http://www.stud.uni-karlsruhe.de/~uyhc/api/todo-index.html list of Todos] marked with the place where actions needs to be taken. This page in contrast is meant to give a broader overview on things that still need to be done.
 
 
 = Details =
 
-  * Characer decomposition:
-    The current list of character decomposition is rather short and only few of the basic characters have entries.
+  * Character decomposition:
+    The current list of character decomposition is rather short and only a few of the basic characters have entries.
   * Stroke order:
-    A rather tedious work includes creating entries for the stroke order of characters in naming the strokes found in particular in each character. This list is combined with the character decomposition and thus way less characters actually need an entry. In return more acurate stroke count entries can be generated.
+    A rather tedious bit of work includes creating entries for the stroke order of characters in naming the strokes found in particular in each character. This list is combined with the character decomposition and thus far fewer characters actually need an entry. In return more acurate stroke count entries can be generated.
   * Mapping to glyph images:
-    Both stroke order and character decomposition should be mapped to actual graphical representations so that a reference is given for all entries. Sources for reference need to be discussed on.
+    Both stroke order and character decomposition should be mapped to actual graphical representations so that a reference is given for all entries. Sources for reference also need to be discussed.
   * Mapping to locales:
     Each character can have a distinct glyph mapped to one of the locales (traditional, Chinese simplified, Japanese simplified, Korean and Vietnamese). This should be done given a valid source.
   * Readings:
-    A lot standard readings/romanisations are still not implemented. Especially support for Japanese and Vietnamese is missing.
+    A lot of standard readings/romanisations are still not implemented, especially for Japanese and Vietnamese.
