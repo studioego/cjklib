@@ -4,7 +4,7 @@
 
 To help you understand where something like cjklib would be useful, here are a few example applications envisioned by the developers during the creation process.
 
-= Applications =
+= Potential Applications =
 
 *Romanization of Han characters in a larger project 
 
