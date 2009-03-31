@@ -18,4 +18,8 @@ Description, maybe mention project.
 
 Chris?
 
+* Consistence checks of dictionary
+
+Use Pinyin romanization handling and data from Unicode's Unihan to crosscheck CEDICT and HanDeDict's entries. Example script: [http://code.google.com/p/cjklib/source/browse/trunk/examples/checkcedict.py trunk/examples/checkcedict.py], list of possibly wrong entries: http://www.stud.uni-karlsruhe.de/~uyhc/en/content/consistency-check-cedict-unihan-pinyin-pronunciations
+
 * Other ideas?  
