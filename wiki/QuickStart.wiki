@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Make sure you have [http://www.python.org/download/ Python], [http://www.sqlite.org/download.html SQLite] and [http://oss.itsystementwicklung.de/trac/pysqlite/ pysqlite2] installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example, change to the appropriate commands under Windows when on this system.
+Make sure you have [http://www.python.org/download/ Python 2.5 or newer] and [http://www.sqlite.org/download.html SQLite] installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example, change to the appropriate commands under Windows when on this system.
 
 = Steps =
 
