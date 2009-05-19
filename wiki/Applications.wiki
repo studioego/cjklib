@@ -12,7 +12,7 @@ When something like conversion to pinyin is required in a software project, usua
 
 * Dictionary programs
 
-Description, maybe mention project.
+  * [http://code.google.com/p/eclectus/ Eclectus] a small Han character dictionary for learners.
 
 * Something having to do with stroke order 
 
