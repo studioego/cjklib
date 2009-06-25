@@ -18,23 +18,23 @@ Get character information including:
   * Character decomposition
 
 {{{
-$ ./cjknife -i 醒
-Information for character 醒 (traditional locale)
-Unicode codepoint: 0x9192 (37266, character form)
-Radical index: 164, radical form: ⾣
-Stroke count: 16
-Phonetic data (CantoneseYale): séng, sīng, síng
-Phonetic data (GR): cherng, jing, shing, shiing
-Phonetic data (Hangul): 성
-Phonetic data (Jyutping): seng2, sing1, sing2
-Phonetic data (MandarinBraille): ⠟⠼⠂, ⠛⠡⠁, ⠓⠡⠁, ⠓⠡⠄
-Phonetic data (MandarinIPA): tʂ‘əŋ˧˥, tɕiŋ˥˥, ɕiŋ˥˥, ɕiŋ˨˩˦
-Phonetic data (Pinyin): chéng, jīng, xīng, xǐng
-Phonetic data (WadeGiles): ch‘eng2, ching1, hsing1, hsing3
-Specialised semantic variants: 惺
-Glyph 0(*), stroke count: 16
-⿰酉星　　
-　　⿱日生
+$ ./cjknife -i 周
+Information for character 周 (traditional locale, Unicode domain)
+Unicode codepoint: 0x5468 (21608, character form)
+Radical index: 30, radical form: ⼝
+Stroke count: 8
+Phonetic data (CantoneseYale): jāu
+Phonetic data (GR): jou
+Phonetic data (Hangul): 주
+Phonetic data (Jyutping): zau1
+Phonetic data (MandarinBraille): ⠌⠷⠁
+Phonetic data (MandarinIPA): tʂou˥˥
+Phonetic data (Pinyin): zhōu
+Phonetic data (WadeGiles): chou1
+Semantic variants: 週
+Glyph 0(*), stroke count: 8
+⿵⺆⿱土口
+Stroke order: ㇓㇆㇐㇑㇐㇑㇕㇐ (SP-HZG H-S-H S-HZ-H)
 }}}
 
 
@@ -83,8 +83,9 @@ $ ./cjknife -k 7
 === Get characters by components ===
 Get a list of characters including all the given characters:
 {{{
-$ ./cjknife -p 口五
-圄龉䮏鋙焐唔㐚䦜悟語梧䢩娪鼯逜䎸吾鯃捂俉䓊啎敔珸衙郚寤晤痦语齬浯㹳㕶䏸铻峿牾
+$ ./cjknife -p 口土
+吐呿咥哇垕㖏㙂㙅唑唗唟㖫哩啀啈啩㖶㗌䞤亴喔喹堡臵超㙜䞦䞧䞩喱嗑塣趌㗧䞫嘊嘡塾臺趗
+㙮䞳䞸嘢嘵墪趟㘁㙱㙳㙵㯧儓噇噻趦㘆㸀兣嬯懛擡薹䠟嚜嚡檯趫穯籉趮囈
 }}}
 
 
