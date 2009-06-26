@@ -1,7 +1,7 @@
 #summary Advantages of cjklib.
 #labels Featured,Phase-Design
 
-Cjklib is for you if you develop solutions handling Hanzi, Kanji, Hanja and romanisations Pinyin, Wade-Giles, Jyutping, Yale and are looking for a clean, easy yet flexible system providing you with the fundamental functions.
+Cjklib is for you if you develop solutions handling Hanzi, Kanji, Hanja and romanisations Pinyin, Wade-Giles, Jyutping, Yale or even Braille (to name only some) and are looking for a clean, easy, yet flexible system providing you with the fundamental functions.
 
 Cjklib
   * *hides complexity* where appropriate,
