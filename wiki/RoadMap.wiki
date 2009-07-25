@@ -1,0 +1,37 @@
+#summary Road map of cjklib
+#labels Phase-Design
+
+= Introduction =
+
+This road map should layout issues and their relation to coming releases.
+
+
+= Details =
+
+0.1alpha (or 0.2, as snapshots already carry 0.1alpha)
+  * Fix unit test failures (maybe skip those related to letter case)
+  * Finalize API
+    * Remove getOption() and follow Python style with attributes
+    * Decide on semantics of getOnsetRhyme()
+    * Decide on CharacterResidualStrokeCountBuilder
+  * Review all TODOs marked as "fix" in http://www.stud.uni-karlsruhe.de/~uyhc/api/todo-index.html
+
+0.2
+  * Japanese reading mapping
+  * Character decomposition table
+
+0.3
+  * Stroke order?
+
+1.0
+  * Support for widely used romanizations
+    * Japanese
+      * Hepburn (as much a possible)
+      * Nihon-shiki
+    * Korean
+      * Revised Romanization (in "transliteration mode")
+      * McCune-Reischauer
+      * Yale
+    * Mandarin
+      * Zhuyin
+      * Tongyong Pinyin
