@@ -21,7 +21,7 @@ Make sure you have [http://www.python.org/download/ Python 2.5 or newer], [http:
   }}}
   # Build the database
   {{{
-  ./buildcjkdb -b cjklibData
+  ./buildcjkdb build cjklibData
   }}}
 
 Now you should be able to test most of the examples given under [Screenshots].
@@ -34,7 +34,7 @@ For the additionally offered dictionary functions you can:
   }}}
   # Build the tables needed
   {{{
-  ./buildcjkdb -b fullCEDICT
+  ./buildcjkdb build fullCEDICT
   }}}
 
 That's it.
