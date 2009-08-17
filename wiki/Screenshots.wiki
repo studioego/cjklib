@@ -80,6 +80,17 @@ $ ./cjknife -k 7
 }}}
 
 
+=== Limit results to a given character domain ===
+{{{
+$ ./cjknife -d BIG5 -k 7
++0: 二
++1: 亍于
++2: 云亓互井五
++4: 亙
++6: 些亟亞
+}}}
+
+
 === Get characters by components ===
 Get a list of characters including all the given characters:
 {{{
