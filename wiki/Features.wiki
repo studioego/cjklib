@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This list tries to give an overview of features supported by cjklib. If you would like to see some examples try [Screenshots].
+This list tries to give an overview of features supported by cjklib. If you would like to see some examples try [Screenshots]. See abstract [Goals]; a different view on features is given by [WhyUseCjklib].
 
 
 = Details =
@@ -33,7 +33,7 @@ This list tries to give an overview of features supported by cjklib. If you woul
   * Mandarin Chinese:
     * Pinyin
     * Gwoyeu Romatzyh
-    * Wade-Giles (work in progress)
+    * Wade-Giles
     * IPA
     * Braille
   * Yue (Cantonese):
@@ -50,7 +50,10 @@ This list tries to give an overview of features supported by cjklib. If you woul
   * Support of non-standard realisations of input reading (_reading dialect_)
 
 == Radicals ==
-  * ...
+  * Mapping of characters to their Kangxi radical
+  * Lookup of radical forms and radical variants
+  * Mapping between Unicode radical forms and equivalent characters
+  * Multi-radical search (see character components)
 
 == Variants ==
   * Variant information as given by the Unihan database:
@@ -64,14 +67,18 @@ This list tries to give an overview of features supported by cjklib. If you woul
   * Default mapping of glyph form for locale
 
 == Character components ==
-  * ...
+  * Decomposition of characters into components
+  * Component tree with structural information
+  * Component search with equivalent forms
 
 == Strokes ==
   * Glyph dependant stroke count
-  * ...
+  * Unicode stroke forms
+  * Stroke order of characters
+  * Abbreviated ASCII names for strokes
 
 == Build system ==
-A dependancy based, modular build system is supplied for creating the library's database from packaged data files and from [http://unicode.org/charts/unihan.html Unicode's Unihan] database. Additionally Unihan's data can be overloaded by more precise data if available.
+A dependancy based, modular build system is supplied for creating the library's database from packaged data files and from [http://unicode.org/charts/unihan.html Unicode's Unihan] database or [http://www.csse.monash.edu.au/~jwb/kanjidic2/ Kanjidic2]. Additionally Unihan's data can be overloaded by more precise data if available.
 
 == Dictionaries ==
-Support for [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT], [http://www.mdbg.net/chindict/chindict.php?page=cedict CEDICT], the [http://home.iprimus.com.au/richwarm/gr/gr.htm#grdict Gwoyeu Romatzyh Version of CEDICT] (called CEDICTGR here) and [http://www.chinaboard.de/chinesisch_deutsch.php HanDeDict] with full-text search included for command-line tool _cjknife_.
+Support for [http://www.csse.monash.edu.au/~jwb/j_edict.html EDICT], [http://www.mdbg.net/chindict/chindict.php?page=cedict CEDICT], the [http://home.iprimus.com.au/richwarm/gr/gr.htm#grdict Gwoyeu Romatzyh Version of CEDICT] (called CEDICTGR here), [http://www.chinaboard.de/chinesisch_deutsch.php HanDeDict] and [http://www.chinaboard.de/cfdict.php CFDICT] with full-text search included for command-line tool _cjknife_.
