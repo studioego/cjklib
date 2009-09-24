@@ -77,6 +77,43 @@ This list tries to give an overview of features supported by cjklib. If you woul
   * Stroke order of characters
   * Abbreviated ASCII names for strokes
 
+== Data ==
+The library comes with its own set of sources on:
+  * Pinyin syllables 
+  * Gwoyeu Romatzyh syllables including rhotacised forms and abbreviations 
+  * Wade-Giles syllables 
+  * Jyutping syllables 
+  * Cantonese Yale syllables 
+  * Pinyin to Gwoyeu Romatzyh mapping 
+  * Wade-Giles to Pinyin mapping 
+  * Pinyin to IPA mapping 
+  * Pinyin to Braille mapping 
+  * Jyutping to Cantonese Yale mapping 
+  * Jyutping to IPA mapping 
+  * mapping of Mandarin syllables to onset and rhyme 
+  * mapping of Cantonese syllables to onset and rhyme 
+  * Kangxi radical forms 
+  * stroke count and stroke order 
+  * stroke names 
+  * character decomposition 
+
+See the data files for comparison with other sources.
+
+This project makes use of the Unicode Han database provided by the Unicode Consortium: Unicode Standard Annex #38 - Unicode Han database (Unihan): http://www.unicode.org/reports/tr38/, 28.03.2008.
+
+The following data is used:
+  * Character Kangxi radical information (from kRSKangxi) 
+  * Radical residual stroke count (from kRSKangxi) and total stroke count (from KTotalStrokes) 
+  * Mandarin character readings in Pinyin (from kMandarin, kHanyuPinlu, kXHC1983, kHanyuPinyin) 
+  * Cantonese character readings in Jyutping (from kCantonese) 
+  * Korean character readings in Hangul (from kHangul) 
+  * Character variant forms (from kCompatibilityVariant, kSemanticVariant, kSimplifiedVariant, kSpecializedSemanticVariant, kTraditionalVariant, kZVariant) 
+
+This includes dictionary data from:
+  * kXHC1983: Xiàndài Hànyǔ Cídiǎn (现代汉语词典). Shāngwù Yìnshūguǎn, Beijing, 
+  * kHanyuPinlu: Xiàndài Hànyǔ Pínlǜ Cídiǎn (現代漢語頻率詞典). 北京語言學院語言教學研究所編著, First edition 1986/6, 2nd printing 1990/4, ISBN 7-5619-0094-5. 
+  * kHanyuPinyin: Hànyǔ Dà Zìdiǎn (漢語大字典). 許力以主任，徐中舒主編，（漢語大字典工作委員會）。 武漢：四川辭書出版社，湖北辭書出版社, 1986-1990. ISBN: 7-5403-0030-2/H.16. 
+
 == Build system ==
 A dependancy based, modular build system is supplied for creating the library's database from packaged data files and from [http://unicode.org/charts/unihan.html Unicode's Unihan] database or [http://www.csse.monash.edu.au/~jwb/kanjidic2/ Kanjidic2]. Additionally Unihan's data can be overloaded by more precise data if available.
 
