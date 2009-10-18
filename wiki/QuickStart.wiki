@@ -3,25 +3,21 @@
 
 = Introduction =
 
-Make sure you have [http://www.python.org/download/ Python 2.5 or newer], [http://www.sqlalchemy.org/download.html SQLalchemy] and [http://www.sqlite.org/download.html SQLite] installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example, change to the appropriate commands under Windows when on this system.
+Make sure you have [http://www.python.org/download/ Python 2.5 or newer], [http://www.sqlalchemy.org/download.html SQLalchemy] and [http://www.sqlite.org/download.html SQLite] installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example. Jump to [QuickStart#Ubuntu Ubuntu] or [QuickStart#Debian Debian] for installing a packaged version.
 
 = Steps =
 
-  # Get the source code first
+  # First download the latest release from [http://code.google.com/p/cjklib/downloads/list Downloads] and unpack it.
   {{{
-  svn checkout http://cjklib.googlecode.com/svn/trunk/ cjklib-read-only
+  tar -xzf cjklib-0.2.tar.gz
   }}}
   # Go to the new directory
   {{{
-  cd cjklib-read-only
+  cd cjklib-0.2
   }}}
-  # Get Unihan.txt from [ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip]
+  # Install
   {{{
-  wget ftp://ftp.unicode.org/Public/UNIDATA/Unihan.zip
-  }}}
-  # Build the database
-  {{{
-  ./buildcjkdb build cjklibData
+  python setup.py install
   }}}
 
 Now you should be able to test most of the examples given under [Screenshots].
@@ -34,7 +30,20 @@ For the additionally offered dictionary functions you can:
   }}}
   # Build the tables needed
   {{{
-  ./buildcjkdb build fullCEDICT
+  buildcjkdb build fullCEDICT
   }}}
 
 That's it.
+
+== Ubuntu ==
+Add the following lines to your {{{/etc/apt/sources.list}}} (replace karmic with jaunty when on this system):
+{{{
+deb http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main 
+deb-src http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main
+}}}
+
+Then do a {{{sudo aptitude update}}} followed by {{{sudo aptitude install python-cjklib}}}.
+
+== Debian ==
+Download the .deb from [http://code.google.com/p/cjklib/downloads/list Downloads] and run
+{{{dpkg -i python-cjklib_0.2-1_all.deb}}}
