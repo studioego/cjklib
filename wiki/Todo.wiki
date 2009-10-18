@@ -9,7 +9,7 @@ The [http://www.stud.uni-karlsruhe.de/~uyhc/api/index.html API] already includes
 = Details =
 
   * Character decomposition:
-    The current list of character decomposition is rather short and only a few of the basic characters have entries.
+    The given set needs to be reviewed and rules for decomposition to be set up.
   * Stroke order:
     A rather tedious bit of work includes creating entries for the stroke order of characters in naming the strokes found in particular in each character. This list is combined with the character decomposition and thus far fewer characters actually need an entry. In return more acurate stroke count entries can be generated.
   * Mapping to glyph images:
