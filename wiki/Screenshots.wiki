@@ -18,7 +18,7 @@ Get character information including:
   * Character decomposition
 
 {{{
-$ ./cjknife -i 周
+$ cjknife -i 周
 Information for character 周 (traditional locale, Unicode domain)
 Unicode codepoint: 0x5468 (21608, character form)
 Radical index: 30, radical form: ⼝
@@ -41,27 +41,27 @@ Stroke order: ㇓㇆㇐㇑㇐㇑㇕㇐ (SP-HZG H-S-H S-HZ-H)
 === Looking up characters by reading ===
 Get a list of homophon characters with the given reading:
 {{{
-$ ./cjknife -s Hangul -a 국
+$ cjknife -s Hangul -a 국
 匊國局掬菊跼鞠鞫麯麴
 }}}
 
 
 === Get reading of characters ===
 {{{
-$ ./cjknife -t Hangul -r 漢字
+$ cjknife -t Hangul -r 漢字
 한 자
 }}}
 
 Get readings for characters with several pronunciations (多音字):
 {{{
-$ ./cjknife -t Pinyin -r 漢字
+$ cjknife -t Pinyin -r 漢字
 [hàn tān] [zì zi]
 }}}
 
 
 === Convert between traditional and simplified forms ===
 {{{
-$ ./cjknife -f 漢字
+$ cjknife -f 漢字
 Chinese simplified: 汉字
 Traditional: 漢字
 }}}
@@ -69,7 +69,7 @@ Traditional: 漢字
 
 === Get characters by Kangxi radical ===
 {{{
-$ ./cjknife -k 7
+$ cjknife -k 7
 +0: 二                                                                   
 +1: 亐亍亏于                                                             
 +2: 云亓互井五亖                                                         
@@ -82,7 +82,7 @@ $ ./cjknife -k 7
 
 === Limit results to a given character domain ===
 {{{
-$ ./cjknife -d BIG5 -k 7
+$ cjknife -d BIG5 -k 7
 +0: 二
 +1: 亍于
 +2: 云亓互井五
@@ -94,7 +94,7 @@ $ ./cjknife -d BIG5 -k 7
 === Get characters by components ===
 Get a list of characters including all the given characters:
 {{{
-$ ./cjknife -p 口土
+$ cjknife -p 口土
 吐呿咥哇垕㖏㙂㙅唑唗唟㖫哩啀啈啩㖶㗌䞤亴喔喹堡臵超㙜䞦䞧䞩喱嗑塣趌㗧䞫嘊嘡塾臺趗
 㙮䞳䞸嘢嘵墪趟㘁㙱㙳㙵㯧儓噇噻趦㘆㸀兣嬯懛擡薹䠟嚜嚡檯趫穯籉趮囈
 }}}
@@ -103,19 +103,19 @@ $ ./cjknife -p 口土
 === Convert readings ===
 Converting from tones given by numbers to standard form with diacritics:
 {{{
-$ ./cjknife -s CantoneseYale -t CantoneseYale -m gwong2dung1wa2
+$ cjknife -s CantoneseYale -t CantoneseYale -m gwong2dung1wa2
 gwóngdūngwá
 }}}
 
 Convert between romanisations:
 {{{
-$ ./cjknife -s Pinyin -t GR -m Guo2yu3
+$ cjknife -s Pinyin -t GR -m Guo2yu3
 Gwoyeu
 }}}
 
 Get pronunciation in IPA (considering basic tonal changes):
 {{{
-$ ./cjknife -s Pinyin -t MandarinIPA -m lao3shi1
+$ cjknife -s Pinyin -t MandarinIPA -m lao3shi1
 lau˨˩.ʂʅ˥˥
 }}}
 
@@ -125,7 +125,7 @@ _The following extracts are taken from [http://www.csse.monash.edu.au/~jwb/j_edi
 
 Looking for entries including a term in Chinese characters:
 {{{
-$ ./cjknife -w CEDICT -c 漢字
+$ cjknife -w CEDICT -c 漢字
 漢字, Hàn zì, /Chinese character, kanji/
 漢字查字法, Hàn zì chá zì fǎ, /look-up method for Chinese characters/
 漢字輸入, Hàn zì shū rù, /Chinese character input/method for typing Chinese/
@@ -136,7 +136,7 @@ $ ./cjknife -w CEDICT -c 漢字
 
 Looking for an exact English term:
 {{{
-$ ./cjknife -w CEDICT -x "knowledge"
+$ cjknife -w CEDICT -x "knowledge"
 見聞, jiàn wén, /what one sees and hears/knowledge/information/
 認識, rèn shi, /to know/to recognize/to be familiar with/acquainted with sth/kno
 wledge/understanding/awareness/cognition/
@@ -150,7 +150,7 @@ wledge/understanding/awareness/cognition/
 
 Looking for exact matches to a given reading:
 {{{
-$ ./cjknife -w EDICT -x かんじ
+$ cjknife -w EDICT -x かんじ
 冠辞, かんじ, /(n) stereotyped epithet/
 官事, かんじ, /(n) government business/
 官寺, かんじ, /(n) state-sponsored temples, particularly those favored and prote
@@ -163,7 +163,7 @@ cted by the shogunate during the Kamakura period/
 莞爾, かんじ, /(adv-to) smiling/
 }}}
 {{{
-$ ./cjknife -w CEDICT -x "zhishi"
+$ cjknife -w CEDICT -x "zhishi"
 知識, zhī shi, /intellectual/knowledge-related/knowledge/
 執事, zhí shì, /deacon/
 只是, zhǐ shì, /merely/simply/only/but/
