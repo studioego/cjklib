@@ -42,8 +42,14 @@ deb http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main
 deb-src http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main
 }}}
 
-Then do a {{{sudo aptitude update}}} followed by {{{sudo aptitude install python-cjklib}}}.
+Then run
+{{{
+sudo aptitude update
+sudo aptitude install python-cjklib
+}}}
 
 == Debian ==
 Download the .deb from [http://code.google.com/p/cjklib/downloads/list Downloads] and run
-{{{dpkg -i python-cjklib_0.2-1_all.deb}}}
+{{{
+dpkg -i python-cjklib_0.2-1_all.deb
+}}}
