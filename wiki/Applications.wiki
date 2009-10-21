@@ -14,12 +14,17 @@ When something like conversion to pinyin is required in a software project, usua
 
   * [http://code.google.com/p/eclectus/ Eclectus] a small Han character dictionary for learners.
 
-* Something having to do with stroke order 
+* Useage of character decomposition:
 
-Chris?
+  * [http://www.tegaki.org Tegaki] handwriting recognition uses cjklib to bootstrap handwriting models for Traditional Chinese using models from character components.
+
+* Something having to do with stroke order:
+
+  * [http://github.com/cburgmer/hwr/commits/strokes Single stroke recognition with Tegaki]: using stroke order data, stroke handwriting models can be created from existing character data.
+  * IMEs (Input method editor) like ibus and SCIM can use stroke order data to provide a stroke order input similar to mobile phones.
 
 * Consistence checks of dictionary
 
-Use Pinyin romanization handling and data from Unicode's Unihan to crosscheck CEDICT and HanDeDict's entries. Example script: [http://code.google.com/p/cjklib/source/browse/trunk/examples/checkcedict.py trunk/examples/checkcedict.py], list of possibly wrong entries: http://www.stud.uni-karlsruhe.de/~uyhc/en/content/consistency-check-cedict-unihan-pinyin-pronunciations
+Use Pinyin romanization handling and data from Unicode's Unihan to crosscheck CEDICT and HanDeDict's entries. Example script: [http://code.google.com/p/cjklib/source/browse/trunk/examples/checkcedict.py trunk/examples/checkcedict.py], list of possibly wrong entries: http://cburgmer.nfshost.com/content/consistency-check-cedict-unihan-pinyin-pronunciations
 
 * Other ideas?  
