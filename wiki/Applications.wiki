@@ -1,22 +1,19 @@
-#summary Lists some ideas for programs that would benefit from cjklib
+#summary Lists some programs that benefit or would benefit from cjklib
 
 = Introduction =
 
-To help you understand where something like cjklib would be useful, here are a few example applications envisioned by the developers during the creation process.
+To help you understand where something like cjklib would be useful, here are a few existing applications. Also given are example applications envisioned by the developers during the creation process.
 
-= Potential Applications =
-
-*Romanization of Han characters in a larger project 
-
-When something like conversion to pinyin is required in a software project, usually a "hacky" solution is put in place that is "good enough." Rather than reduplicating the effort in creating a new hacky solution, cjklib can be easily used in many of these situations to provide high quality, high reliability romanization. 
+= Applications =
 
 * Dictionary programs
 
-  * [http://code.google.com/p/eclectus/ Eclectus] a small Han character dictionary for learners.
+  * [http://code.google.com/p/eclectus/ Eclectus], a small Han character dictionary for learners.
+  * [http://wiki.github.com/batterseapower/pinyin-toolkit Pinyin Toolkit], a plugin for the Anki Spaced Repetition System (http://ichi2.net/anki/)
 
 * Useage of character decomposition:
 
-  * [http://www.tegaki.org Tegaki] handwriting recognition uses cjklib to bootstrap handwriting models for Traditional Chinese using models from character components.
+  * [http://www.tegaki.org Tegaki] handwriting recognition uses cjklib to bootstrap handwriting models for Traditional Chinese based on models from character components. 
 
 * Something having to do with stroke order:
 
