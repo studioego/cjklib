@@ -3,7 +3,7 @@
 
 = Introduction =
 
-The [http://www.stud.uni-karlsruhe.de/~uyhc/api/index.html API] already includes a [http://www.stud.uni-karlsruhe.de/~uyhc/api/todo-index.html list of Todos] marked with the place where actions needs to be taken. This page in contrast is meant to give a broader overview on things that still need to be done.
+The [http://cburgmer.nfshost.com/cjklib API] already includes a [http://cburgmer.nfshost.com/cjklib/current/todo-index.html list of Todos] marked with the place where actions needs to be taken. This page in contrast is meant to give a broader overview on things that still need to be done.
 
 
 = Details =
