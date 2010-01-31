@@ -23,6 +23,7 @@ What kind of different decomposition can exist?
   * Including Kangxi radical (might not generally overlap with visual and ethymological)
 
 What else needs to be considered?
+  * Are there different grades in decomposition? People might disagree on what is a component and this disagreement can possibly be expressed in a degree of validity. Some might argue components need to be separated by a "void", as to clearly cut through a character. For them 龙 might not be expressed as ⿻尤？ (the question mark denoting a missing character to express that component). A degree might express how well a decomposition seems fitting: 1=can be cut through into two clear components, 2=overlap, but both character exist in their own right, 3=one component clearly is a character.
   * Can non-Han characters serve as components? If not, why?
   * Are in-frequent characters outside the [http://en.wikipedia.org/wiki/Basic_Multilingual_Plane#Basic_Multilingual_Plane BMP] useful?
   * What to do with frequent components that didn't get encoded with Unicode?
