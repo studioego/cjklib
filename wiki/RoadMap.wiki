@@ -8,20 +8,15 @@ This road map should layout issues and their relation to coming releases.
 
 = Details =
 
-0.1alpha (or 0.2, as snapshots already carry 0.1alpha)
-  * Fix unit test failures (maybe skip those related to letter case)
-  * Finalize API
-    * Remove getOption() and follow Python style with attributes
-    * Decide on semantics of getOnsetRhyme()
-    * Decide on CharacterResidualStrokeCountBuilder
-  * Review all TODOs marked as "fix" in http://www.stud.uni-karlsruhe.de/~uyhc/api/todo-index.html
-
-0.2
-  * Japanese reading mapping
-  * Character decomposition table
 
 0.3
-  * Stroke order?
+  * Dictionary support
+  * Support for multiple databases
+
+0.X
+  * Japanese reading mapping
+  * Stroke order data
+  * (Fuzzy) searching by stroke order
 
 1.0
   * Support for widely used romanizations
