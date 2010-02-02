@@ -29,6 +29,8 @@ What else needs to be considered?
   * What to do with frequent components that didn't get encoded with Unicode?
   * Should components be mapped to a similar character or the ethymological character with a different visual representation if no exact character exists?
   * What about component structures not recognized by Unicode (IDS), e.g. 众?
+    * http://linguistics.berkeley.edu/~rscook/pdf/UniProp-Final/02221-n2480.pdf
+  * http://appsrv.cse.cuhk.edu.hk/~irg/irg/irg28/IRGN1298_IDS_check_result.doc
 
 = Current Organisation =
 
