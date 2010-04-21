@@ -40,13 +40,15 @@ This list tries to give an overview of features supported by cjklib. If you woul
     * Cantonese Yale
     * Jyutping
     * IPA (work in progress)
+  * Wu (Shanghainese):
+    * IPA
   * Korean
     * Hangul
   * Japanese
     * Kana (Hiragana & Katakana)
 
 == Character to reading mapping ==
-  * Character to reading and reading to character mappings as supported by the Unihan database for Mandarin Chinese, Yue (Cantonese) and Korean
+  * Character to reading and reading to character mappings as supported by the Unihan database for Mandarin Chinese, Yue (Cantonese), Wu (Shanghainese) and Korean
   * Support of non-standard realisations of input reading (_reading dialect_)
 
 == Radicals ==
