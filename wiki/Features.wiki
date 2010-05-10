@@ -92,6 +92,8 @@ The library comes with its own set of sources on:
   * Pinyin to Braille mapping 
   * Jyutping to Cantonese Yale mapping 
   * Jyutping to IPA mapping 
+  * Shanghainese (IPA) syllables 
+  * mapping of characters to Shanghainese pronunciation
   * mapping of Mandarin syllables to onset and rhyme 
   * mapping of Cantonese syllables to onset and rhyme 
   * Kangxi radical forms 
@@ -106,7 +108,7 @@ This project makes use of the Unicode Han database provided by the Unicode Conso
 The following data is used:
   * Character Kangxi radical information (from kRSKangxi) 
   * Radical residual stroke count (from kRSKangxi) and total stroke count (from KTotalStrokes) 
-  * Mandarin character readings in Pinyin (from kMandarin, kHanyuPinlu, kXHC1983, kHanyuPinyin) 
+  * Mandarin character readings in Pinyin (from kHanyuPinlu, kXHC1983, kHanyuPinyin) 
   * Cantonese character readings in Jyutping (from kCantonese) 
   * Korean character readings in Hangul (from kHangul) 
   * Character variant forms (from kCompatibilityVariant, kSemanticVariant, kSimplifiedVariant, kSpecializedSemanticVariant, kTraditionalVariant, kZVariant) 
