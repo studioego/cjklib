@@ -3,53 +3,59 @@
 
 = Introduction =
 
-Make sure you have [http://www.python.org/download/ Python 2.5 or newer], [http://www.sqlalchemy.org/download.html SQLalchemy] and [http://www.sqlite.org/download.html SQLite] installed (lets focus on SQLite for now). In the following steps Unix commands are shown as an example. Jump to [QuickStart#Ubuntu Ubuntu] or [QuickStart#Debian Debian] for installing a packaged version.
+See http://cjklib.org/0.3/installing.html for a full explanation.
+
+Make sure you have [http://www.python.org/download/ Python 2.5 or newer], [http://www.sqlalchemy.org/download.html SQLalchemy] and [http://www.sqlite.org/download.html SQLite] installed (lets focus on SQLite for now). Jump to [QuickStart#Windows Windows], [QuickStart#Ubuntu Ubuntu] or [QuickStart#Debian Debian] for an installer version.
 
 = Steps =
 
   # First download the latest release from [http://code.google.com/p/cjklib/downloads/list Downloads] and unpack it.
   {{{
-  tar -xzf cjklib-0.2.tar.gz
+  tar -xzf cjklib-0.3.tar.gz
   }}}
   # Go to the new directory
   {{{
-  cd cjklib-0.2
+  cd cjklib-0.3
   }}}
   # Install
   {{{
-  python setup.py install
+  sudo python setup.py install
   }}}
 
 Now you should be able to test most of the examples given under [Screenshots].
 
 For the additionally offered dictionary functions you can:
 
-  # Download CEDICT from [http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz]
+  # Install CEDICT (or any other out of EDICT, HanDeDict, CEDICTGR, CFDICT):
   {{{
-  wget http://us.mdbg.net/chindict/export/cedict/cedict_1_0_ts_utf-8_mdbg.txt.gz
-  }}}
-  # Build the tables needed
-  {{{
-  buildcjkdb build fullCEDICT
+  sudo installcjkdict CEDICT
   }}}
 
 That's it.
 
+== Windows ==
+Download the .exe installer for MS Windows from [http://code.google.com/p/cjklib/downloads/list Downloads] and run it.
+
+Make sure C:\Python26\Scripts is in your `PATH` enviroment.
+
+Install CEDICT (or any other, see above)::
+  {{{
+  installcjkdict CEDICT
+  }}}
+
+
 == Ubuntu ==
-Add the following lines to your {{{/etc/apt/sources.list}}} (replace karmic with jaunty when on this system):
-{{{
-deb http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main 
-deb-src http://ppa.launchpad.net/cburgmer/ppa/ubuntu karmic main
-}}}
+Run the following on Ubuntu to install from a PPA:
 
 Then run
 {{{
-sudo aptitude update
-sudo aptitude install python-cjklib
+sudo add-apt-repository ppa:cburgmer/ppa
+sudo apt-get update
+sudo apt-get install python-cjklib
 }}}
 
 == Debian ==
 Download the .deb from [http://code.google.com/p/cjklib/downloads/list Downloads] and run
 {{{
-dpkg -i python-cjklib_0.2~unstable-1_all.deb
+dpkg -i python-cjklib_0.3~unstable-1_all.deb
 }}}
