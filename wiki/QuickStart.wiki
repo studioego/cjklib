@@ -42,20 +42,3 @@ Install CEDICT (or any other, see above)::
   {{{
   installcjkdict CEDICT
   }}}
-
-
-== Ubuntu ==
-Run the following on Ubuntu to install from a PPA:
-
-Then run
-{{{
-sudo add-apt-repository ppa:cburgmer/ppa
-sudo apt-get update
-sudo apt-get install python-cjklib
-}}}
-
-== Debian ==
-Download the .deb from [http://code.google.com/p/cjklib/downloads/list Downloads] and run
-{{{
-dpkg -i python-cjklib_0.3~unstable-1_all.deb
-}}}
